@@ -1,54 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="order.html" method="get">
-   
-         <table border="1" >
-            <tr>
-                <td colspan="2" align="center">Pizza Zone</td>
-            </tr>
-            <tr>
-                <td>
-Name
-            </td>
-        <td>
-<input type="text">
-        </td>
-        </tr>
-        <tr>
-            <td>Toppings</td>
-            <td> 
-                <input type="radio" name="">Supereme <br>
-                <input type="radio" name="">Vegetables
-            </td>
-        </tr>
-        <tr>
-            <td>Extras</td>
-            <td>
-                <input type="checkbox" name="" id="">Cheese <br>
-                <input type="checkbox" name="" id="">Mayo
-            </td>
-        </tr>
-        <tr>
-            <td>Size</td>
-            <td><select name="" id="">
-                <option value="">Small</option>
-                <option value="">Large</option>
-                <option value="">Medeium</option>
-            </select></td>
-        </tr>
-        <tr >
-<td colspan="2"> Any Cooking Instruction <br> <textarea name="" id=""></textarea> <br> <input type="submit" value="Order"><input type="reset" value="Reset"></td>
-
-        </tr>
-         </table>
-      
-    </form>
-
-</body>
-</html>
+<title>Food Review</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+.form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form input[type="text"], .form input[type="email"], .form input[type="number"], .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
